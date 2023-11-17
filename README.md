@@ -23,7 +23,7 @@ Ensure you have the following prerequisites before getting started:
 
 ## Getting Started
 
-If you're new to WeaveDB, it is recommended to go through the [part 1 and part 2 tutorial series](#https://medium.com/@devkoxy/getting-started-with-weavedb-the-database-of-web3-c3f943b1772b) on WeaveDB to set it up with a defined Data Schema and Access Controls.
+If you're new to WeaveDB, it is recommended to go through the [part 1 and part 2 tutorial series](https://medium.com/@devkoxy/getting-started-with-weavedb-the-database-of-web3-c3f943b1772b) on WeaveDB to set it up with a defined Data Schema and Access Controls.
 
 ### Installation
 
