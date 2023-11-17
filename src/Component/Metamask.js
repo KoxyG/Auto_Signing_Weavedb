@@ -65,9 +65,9 @@ export default function MetamaskSignIn() {
   };
 
   const addDataToWeavedb = async () => {
-    const UserData = { addressUser: "Demo Data" };
+    const UserData = { addressUser: "Demo Meta Data" };
 
-    const tx = await db.add(UserData, "Signers", owner);
+    const tx = await db.add(UserData, "MetamaskCollection", owner);
 
     console.log("tx", tx);
     console.log(owner);
@@ -82,7 +82,7 @@ export default function MetamaskSignIn() {
 
   const getStoredData = async () => {
     try {
-      const res = await db.get("Signers", owner);
+      const res = await db.get("MetamaskCollection", owner);
       setStoredData(res);
       console.log("getWorkers()", res);
     } catch (e) {
@@ -122,7 +122,7 @@ export default function MetamaskSignIn() {
                   className="py-4 px-3 bg-[#7a2fd6] rounded-md"
                   onClick={addDataToWeavedb}
                 >
-                  Add 0x0Me..
+                  Add Data
                 </button>
               </div>
             </div>

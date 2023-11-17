@@ -75,13 +75,13 @@ export default function ArweaveSignIn() {
 
   const addArDataToWeavedb = async () => {
     const UserData = { addressUser: "Demo Ar Data.." };
-    const txAr = await db.add(UserData, "Signers", arIdentity);
+    const txAr = await db.add(UserData, "ArweaveCollection", arIdentity);
     console.log("txAr", txAr);
 
     if (txAr) {
       alert("Demo Data.. added successfully");
 
-      setArdata(ardata);
+      setArdata(txAr);
       console.log("txAr", txAr);
       console.log("set ar data", ardata)
     } else {
@@ -91,7 +91,7 @@ export default function ArweaveSignIn() {
 
   const getStoredData = async () => {
     try {
-      const res = await db.get("Signers", owner);
+      const res = await db.get("ArweaveCollection", arUser);
       setArStoredData(res);
       console.log("getWorkers()", res);
     } catch (e) {
