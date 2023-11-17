@@ -16,6 +16,7 @@
     "weavedb-sdk": "^0.37.2"
   },
   "devDependencies": {
+    "arconnect": "^1.0.3",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
