@@ -93,9 +93,9 @@ export default function MetamaskSignIn() {
   return (
     <div>
       {!user ? (
-        <div className="mb-[20px]  bg-[#5137c5]">
+        <div className="mb-[20px] ">
           <button
-            className="py-4 px-3 rounded-md "
+            className="py-4 px-3 button-color rounded-md "
             onClick={handleMetamaskLoginClick}
           >
             Metamask Wallet
@@ -103,9 +103,9 @@ export default function MetamaskSignIn() {
         </div>
       ) : (
         <>
-          <div className="mb-[20px] grid  bg-[#5137c5] justify-items-center">
+          <div className="mb-[20px] grid button-color  button-color justify-items-center">
             <button
-              className="py-4 px-3 rounded-md"
+              className="py-4 px-3 button-color rounded-md"
               onClick={handleMetamaskLogoutClick}
             >
               logout
@@ -117,7 +117,7 @@ export default function MetamaskSignIn() {
                 Click the button below <br />
                 to add demo data
               </p>
-              <div className="mx-[40px]  bg-[#5137c5]">
+              <div className="mx-[40px] button-color bg-[#5137c5]">
                 <button
                   className="py-4 px-3 rounded-md"
                   onClick={addDataToWeavedb}
@@ -129,7 +129,7 @@ export default function MetamaskSignIn() {
           ) : (
             <div>
               <button
-                className="text-white  py-2 px-2   bg-[#5137c5]"
+                className="text-white  py-2 px-2 button-color  bg-[#5137c5]"
                 onClick={getStoredData}
               >
                 Get data

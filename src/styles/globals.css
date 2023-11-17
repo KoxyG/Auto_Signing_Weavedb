@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 
-
+.button-color {
+  background-color:#5137c5;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 
 body {
   color: #fff;
