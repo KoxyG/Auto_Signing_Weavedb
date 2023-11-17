@@ -100,27 +100,27 @@ export default function ArweaveSignIn() {
   };
 
   return (
-    <div>
+    <div className="" >
       {!arUser ? (
-        <div className="py-4 px-3 rounded-md bg-[#7a2fd6]">
+        <div className="py-4 px-3 rounded-md  bg-[#5137c5]">
           <button onClick={handleArConnectLoginClick}>Arweave Wallet</button>
         </div>
       ) : (
         <>
-          <div className="py-4 px-3 rounded-md bg-[#7a2fd6] grid justify-items-center">
+          <div className="py-4 px-3 rounded-md  bg-[#5137c5] grid justify-items-center">
             <button onClick={handleArConnectLogoutClick}>Log out</button>
           </div>
 
           {!ardata ? (
             <div className="text-center grid justify-items-center">
-              <p className="my-[20px] text-xm">
+              <p className="my-[20px] text-[#9b89f6] text-xm">
                 Click the button below <br />
                 to add demo data
               </p>
 
-              <div className="mb-6">
+              <div className="mb-6  bg-[#5137c5]">
                 <button
-                  className="text-white  py-4 px-4  bg-[#7a2fd6]"
+                  className="text-white  py-4 px-4 "
                   onClick={addArDataToWeavedb}
                 >
                   Add Data
@@ -130,7 +130,7 @@ export default function ArweaveSignIn() {
           ) : (
             <div>
               <button
-                className="text-white  py-2 px-2  bg-[#7a2fd6]"
+                className="text-white  py-2 px-2"
                 onClick={getStoredData}
               >
                 Get data

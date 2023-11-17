@@ -22,18 +22,19 @@ export default function Home() {
 
   return (
     <section className="grid  justify-items-center gap-8 my-[100px]">
-      <h1 className="text-3xl text-center sm:text-4xl mx-[20px] font-bold">
+      <h1 className="text-3xl text-center sm:text-4xl mt-[20px] font-bold">
         Auto-signing with Weavedb
       </h1>
+      <p className="text-base text-center  mb-[20px] text-[#9b89f6]">Say Goodbye to Wallet Hassles</p>
       {/* metamask */}
-      <div className="rounded-md ">
+      
         <MetamaskSignIn />
-      </div>
+    
 
       {/* Arweave */}
-      <div className="py-4 px-3 rounded-md ">
+   
         <ArweaveSignIn />
-      </div>
+      
 
       
      
